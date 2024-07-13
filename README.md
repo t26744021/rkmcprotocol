@@ -1,6 +1,4 @@
 
-![Example Image](images/p1.png)
-
 ### 說明
 
 - **項目名稱**：
@@ -15,7 +13,12 @@
 
     - **步驟-1:設定PLC環境**：
         
-        提供簡單的使用示例，展示如何導入和使用該包。
+        範例:設定PLC網路IP、PORT
+        IP   : 192.168.1.100    
+        PORT : 1025
+        
+        ![Example Image](images/p1.png)
+
 
     - **步驟-2:設定PLC環境**：
         
