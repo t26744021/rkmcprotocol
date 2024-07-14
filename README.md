@@ -1,6 +1,6 @@
 - **項目名稱**：
     
-    Python 使用 Socket 連接 FX5U CPU，實現"讀取"和"寫入"功能
+    Python 連接 FX5U ，實現"讀取"和"寫入"功能
 
 - **支援 PLC**：
     
@@ -118,3 +118,7 @@
             print (f' elapsed time = {elapsed}')
 
     ˋˋˋ
+- **Q&A**：
+
+    - **為何不使用ASCII,而使用Binary**
+        ![Example Image](images/p2.png)
