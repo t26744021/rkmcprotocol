@@ -124,5 +124,5 @@
         ![Example Image](images/p2.png)
 
     - **開2個port,使用Threading會比較快嗎?**
-        不行,不會比較快
+         不行,不會比較快<br>
         ![Example Image](images/p3.png)
