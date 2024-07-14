@@ -11,7 +11,7 @@
 
     - **步驟-1:設定PLC環境**：
 
-        IP   : 192.168.1.100<br>    
+        IP   : 192.168.1.100<br>
         PORT : 1025 ( TCP )
 
         ![Example Image](images/p1.png)
