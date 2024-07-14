@@ -11,15 +11,16 @@
 
     - **步驟-1:設定PLC環境**：
 
-        IP   : 192.168.1.100    
+        IP   : 192.168.1.100<br>    
         PORT : 1025 ( TCP )
 
         ![Example Image](images/p1.png)
 
     - **步驟-2:安裝 rkmcprotocol**：
         
-        Download並安裝rkmcprotocol模組
+        Download並安裝rkmcprotocol模組<br>
         例如:C:\Users\Downloads\rkmcprotocol-main>python setup.py install
+
 
 - **示例**：
     #read from D100 to D110
