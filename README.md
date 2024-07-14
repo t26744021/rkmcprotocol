@@ -23,7 +23,7 @@
         Example : C:\Users\Downloads\rkmcprotocol-main>python setup.py install
 
 
-- **功能**：
+- **功能簡介**：
  
         **word**: 
          signed 屬性，表示是否需要正/負符號。
@@ -73,7 +73,15 @@
                            B0           256        |
                            L0           3584       |
                            F0           128        |                
-        ---------------------------------------    |
+        -------------------------------------------|
+- **功能指令**：     
+        ```python
+        讀取功能:
+        #讀M0 ~ M3583值  
+        print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))   
         
-    
+        print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
+        
+        print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
+        ```
 
