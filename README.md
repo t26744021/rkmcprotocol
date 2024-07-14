@@ -60,7 +60,7 @@
                            L0           3584       |
                            F0           128        |                
         -------------------------------------------|
-- **功能指令**：
+- **指令**：
     ```python  
 
         # 讀M0 ~ M3583 , 數值 : 0 or 1
@@ -88,3 +88,29 @@
 
 
     ```
+- **範例**：
+    ˋˋˋpython
+        import rk_mcprotocol as mc
+        import time
+        
+        HOST = '192.168.1.100'
+        PORT = 1025
+        s = mc.open_socket(HOST,PORT) 
+ 
+        while True :
+            st = time.time()
+            
+            print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))   
+            print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=False))
+            print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))      
+            print(mc.write_bit(s,headdevice = 'm0' , data_list = [1]*3584 )) 
+            print(mc.write_sign_word(s,headdevice = 'd0' , data_list = [-999]*960 ,signed_type =True))
+            print(mc.write_sign_Dword(s,headdevice = 'r0' , data_list = [9999999]*480 ,signed_type =True))
+        
+            et = time.time()
+            elapsed = et -st
+            time.sleep(1)  
+            
+            print (f' elapsed time = {elapsed}')
+
+    ˋˋˋ
