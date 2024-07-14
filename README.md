@@ -11,8 +11,8 @@
     - **步驟-1 : 設定PLC環境**
 
         IP   : 192.168.1.100<br>
-        PORT : 1025 ( TCP )
-
+        PORT : 1025 ( TCP )<br>
+        Communiaction Data Code : Binary<br>
         ![Example Image](images/p1.png)
 
     - **步驟-2 : 安裝 rkmcprotocol**
@@ -26,13 +26,13 @@
  
         **word**: 
          signed 屬性，表示是否需要正/負符號。
-            - signed = True :"word" 範圍 -32,768 ~ 32,767
-            - signed = False:"word" 範圍 0 ~ 65,535
+            - signed = True  範圍 -32,768 ~ 32,767
+            - signed = False 範圍       0 ~ 65,535
         
         **Dword**: 
          signed 屬性，表示是否需要正/負符號。
-            signed = True :"Dword"  範圍 -2,147,483,648 ~ 2,147,483,647
-            signed = False:"Dword"  範圍 0 ~ 4,294,967,295
+            - signed = True   範圍 -2,147,483,648 ~ 2,147,483,647
+            - signed = False  範圍              0 ~ 4,294,967,295
 
         **元件清單:**
         各功能請依照指定的“元件清單”的內容執行，否則將會報錯。
@@ -43,16 +43,16 @@
                                                        ( 使用者可自行變更記憶體區塊,所以只介紹默認設定 )
         FUNCTION         元件清單      資料長度         元件清單       資料長度        進制       總點數
         -------------------------------------------| --------------------------------------------------
-        read_sign_word     D0           960        |      X         X0 ~ X1777         8        1024    
-                           W0           512        |      Y         Y0 ~ Y1777         8        1024    
-                           R0           960        |      M         M0 ~ M7679         10       7680    
-                                                   |      B         B0 ~ B0FF          16       256     
-        read_sign_Dword    D0           480        |      L         L0 ~ L7679         10       7680    
-                           W0           256        |      F         F0 ~ F127          10       128     
+        read_sign_word     D0           960        |      X         X0 ~ X1777        8        1024    
+                           W0           512        |      Y         Y0 ~ Y1777        8        1024    
+                           R0           960        |      M         M0 ~ M7679        10       7680    
+                                                   |      B         B0 ~ B0FF         16       256     
+        read_sign_Dword    D0           480        |      L         L0 ~ L7679        10       7680    
+                           W0           256        |      F         F0 ~ F127         10       128     
                            R0           480        |
-                                                   |      D         D0 ~ D7999         10       8000    
-        read_bit           X0           1024       |      W         W0 ~ W1FF          16       512     
-                           Y0           1024       |      R         R0 ~ R32767        10       32768   
+                                                   |      D         D0 ~ D7999        10       8000    
+        read_bit           X0           1024       |      W         W0 ~ W1FF         16       512     
+                           Y0           1024       |      R         R0 ~ R32767       10       32768   
                            M0           3584       |----------------------------------------------------
                            B0           256        |
                            L0           3584       |
@@ -79,8 +79,8 @@
             # 讀M0 ~ M3583 , 數值 : 0 or 1
             print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))
 
-            # 讀D0 ~ D959   signed_type=True  數值 : -32,768 ~ 32,767 
-            #               signed_type=False 數值 :       0 ~ 65,535 
+            # 讀D0 ~ D959              signed_type=True  數值 : -32,768 ~ 32,767 
+            #                          signed_type=False 數值 :       0 ~ 65,535 
             print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
 
             # 讀(R0,R1) ~ (R958,R959)  signed_type=True  數值 : -2,147,483,648 ~ 2,147,483,647 
