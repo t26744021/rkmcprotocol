@@ -9,10 +9,11 @@
 - **使用步驟**：
 
     - **步驟-1 : 設定PLC環境**
-
-        IP   : 192.168.1.100<br>
-        PORT : 1025 ( TCP )<br>
-        Communiaction Data Code : Binary<br>
+        ```python
+            IP   : 192.168.1.100
+            PORT : 1025 ( TCP )
+            Communiaction Data Code : Binary
+        ```
         ![Example Image](images/p1.png)
 
     - **步驟-2 : 安裝 rkmcprotocol**
