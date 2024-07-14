@@ -89,7 +89,7 @@
 
     ```
 - **範例**：
-    ˋˋˋpython
+    ```python  
         import rk_mcprotocol as mc
         import time
         
