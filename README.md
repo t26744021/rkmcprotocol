@@ -1,4 +1,3 @@
-
 - **項目名稱**：
     
     Python 使用 Socket 連接 FX5U CPU，實現"讀取"和"寫入"功能
@@ -76,12 +75,12 @@
         -------------------------------------------|
 - **功能指令**：     
         ```python
-        讀取功能:
-        #讀M0 ~ M3583值  
-        print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))   
-        
-        print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
-        
-        print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
+            讀取功能:
+            #讀M0 ~ M3583值  
+            print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))   
+            
+            print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
+            
+            print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
         ```
 
