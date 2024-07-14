@@ -18,7 +18,7 @@
 
     - **步驟-2:安裝 rkmcprotocol**：
         ```python
-           setup.py install
+        python setup.py install
         ```
         Example : C:\Users\Downloads\rkmcprotocol-main>python setup.py install
 
