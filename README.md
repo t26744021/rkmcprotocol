@@ -32,8 +32,8 @@
         
         **Dword**: 
          signed 屬性，表示是否需要正/負符號。
-            - signed = True   範圍 -2,147,483,648 ~ 2,147,483,647
-            - signed = False  範圍              0 ~ 4,294,967,295
+            - signed = True  範圍 -2,147,483,648 ~ 2,147,483,647
+            - signed = False 範圍              0 ~ 4,294,967,295
 
         **元件清單:**
         各功能請依照指定的“元件清單”的內容執行，否則將會報錯。
@@ -77,15 +77,28 @@
 - **功能指令**：
     ```python  
 
-            # 讀M0 ~ M3583 , 數值 : 0 or 1
-            print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))
+        # 讀M0 ~ M3583 , 數值 : 0 or 1
+        print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))
 
-            # 讀D0 ~ D959              signed_type=True  數值 : -32,768 ~ 32,767 
-            #                          signed_type=False 數值 :       0 ~ 65,535 
-            print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
+        # 讀D0 ~ D959              signed_type=True  數值 : -32,768 ~ 32,767 
+        #                          signed_type=False 數值 :       0 ~ 65,535 
+        print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
 
-            # 讀(R0,R1) ~ (R958,R959)  signed_type=True  數值 : -2,147,483,648 ~ 2,147,483,647 
-            #                          signed_type=False 數值 :              0 ~ 4,294,967,295       
-            print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
+        # 讀(R0,R1) ~ (R958,R959)  signed_type=True  數值 : -2,147,483,648 ~ 2,147,483,647 
+        #                          signed_type=False 數值 :              0 ~ 4,294,967,295       
+        print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
+      #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       
+        # 讀M0 ~ M3583 , 數值 : 0 or 1
+        print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))
+
+        # 讀D0 ~ D959              signed_type=True  數值 : -32,768 ~ 32,767 
+        #                          signed_type=False 數值 :       0 ~ 65,535 
+        print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
+
+        # 讀(R0,R1) ~ (R958,R959)  signed_type=True  數值 : -2,147,483,648 ~ 2,147,483,647 
+        #                          signed_type=False 數值 :              0 ~ 4,294,967,295       
+        print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
+
+
     ```
