@@ -17,9 +17,10 @@
         ![Example Image](images/p1.png)
 
     - **步驟-2:安裝 rkmcprotocol**：
-        
-        Download並安裝rkmcprotocol模組<br>
-        例如:C:\Users\Downloads\rkmcprotocol-main>python setup.py install
+        ```python
+           setup.py install
+        ```
+        Example : C:\Users\Downloads\rkmcprotocol-main>python setup.py install
 
 
 - **示例**：
