@@ -122,3 +122,4 @@
 
     - **為何不使用ASCII,而使用Binary**
         ![Example Image](images/p2.png)
+        123
