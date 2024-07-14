@@ -74,7 +74,7 @@
                            F0           128        |                
         -------------------------------------------|
 - **功能指令**：
-        ```python
+      
 
             #讀M0 ~ M3583值  
             print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))   
@@ -82,5 +82,5 @@
             print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
             
             print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
-        ```
+      
 
