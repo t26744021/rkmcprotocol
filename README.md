@@ -24,21 +24,13 @@
 
 
 - **功能**：
-       目前有6種功能,分別為 bit、word、Dword ( 讀/寫 ）。
-
-        print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))   
-        print(mc.write_bit(s,headdevice = 'm0' , data_list = write_bit )) #write_bit = [1]*3584
-        print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=False))
-        print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=False))      
-        print(mc.write_sign_word(s,headdevice = 'd0' , data_list = word_data ,signed_type =True)) #word_data = [-999]*960
-        print(mc.write_sign_Dword(s,headdevice = 'r0' , data_list = Dword_data ,signed_type =True))#Dword_data = [9999999]*480
-
-        **word**: 
+ 
+    -**word**: 
         有 signed 屬性，表示是否需要正/負符號。
             - signed = True:"word" 範圍 -32,768 ~ 32,767
             - signed = False:"word" 範圍 0 ~ 65,535
         
-        **Dword**: 
+    **Dword**: 
         有 signed 屬性，表示是否需要正/負符號。
             signed = True:"Dword"  範圍 -2,147,483,648 ~ 2,147,483,647
             signed = False:"Dword" 範圍 0 ~ 4,294,967,295
@@ -83,5 +75,5 @@
                                 F0           128        |                
         --------------------------------------------    |
         
-    """
+    
 
