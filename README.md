@@ -76,13 +76,15 @@
 - **功能指令**：
     ```python  
 
-            #讀M0 ~ M3583 , 數值為 0 or 1
+            # 讀M0 ~ M3583 , 數值為 0 or 1
             print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))
 
-            #讀D0 ~ D959  , signed_type=True 數值為 -32,768 ~ 32,767 
-            #               signed_type=False 數值為 0 ~ 65,535 
+            # 讀D0 ~ D959   signed_type=True  數值為 -32,768 ~ 32,767 
+            #               signed_type=False 數值為       0 ~ 65,535 
             print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
-            
+
+            # 讀(R0,R1) ~ (R958,R959)  signed_type=True  數值為 -2,147,483,648 ~ 2,147,483,647 
+            #                          signed_type=False 數值為              0 ~ 4,294,967,295       
             print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
       
     ```
