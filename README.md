@@ -78,8 +78,8 @@
         # 寫M0 ~ M3583 , 數值 : 0 or 1
         print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))
 
-        # 寫D0 ~ D959              signed_type=True  數值 : -32,768 ~ 32,767
-        #                          signed_type=False 數值 :       0 ~ 65,535 
+         寫D0 ~ D959              signed_type=True  數值 : -32,768 ~ 32,767
+                                  signed_type=False 數值 :       0 ~ 65,535 
         print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
 
         # 寫(R0,R1) ~ (R958,R959)  signed_type=True  數值 : -2,147,483,648 ~ 2,147,483,647 
