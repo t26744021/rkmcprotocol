@@ -16,7 +16,7 @@
         ```
         ![Example Image](../images/p1.png)
 
-    - **步驟-2 : 安裝 rkmcprotocol**
+    - **步驟-2 : pip rkmcprotocol**
         ```python
         pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
         ```
