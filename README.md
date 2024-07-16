@@ -18,9 +18,9 @@
 
     - **步驟-2 : 安裝 rkmcprotocol**
         ```python
-        python setup.py install
+        pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
         ```
-        Example : C:\Users\Downloads\rkmcprotocol-main>python setup.py install
+        Example : C:\Users\Downloads\rkmcprotocol-main>pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
 
 
 - **功能簡介**：
@@ -120,16 +120,17 @@
     ˋˋˋ
 - **Q&A**：
 
-    - **為何不使用ASCII,而使用Binary**
+    - **通訊格式為何不使用ASCII,而使用Binary**
     
         A : 速度會比較慢<br>
-        引用手冊 2-1 : 
+        引用:MELSEC iQ-F FX5使用手冊(SLMP篇) Page 12 : 
         與利用ASCII代碼的資料進行的通訊相比，利用二進位代碼的資料進行的通訊的通訊資料量僅約為一半，因此能夠縮短通訊時間。<br>
 
     - **使用Threading會比較快嗎?**
 
         A : 不會<br>
-        引用手冊 2-3 : 
+        引用:MELSEC iQ-F FX5使用手冊(SLMP篇) Page 13 : 
         利用SLMP的數據通訊採用半雙工通訊。<br>
         存取CPU模組時，請在相對於前一個指令封包的發送，接收到來自CPU模組側的回應封包後，發送下一個指令封包。
         （在完成回應封包的接收前，不能發送下一個指令封包。）<br>
+ 
