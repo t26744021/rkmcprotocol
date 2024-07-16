@@ -14,7 +14,7 @@
             PORT : 1025 ( TCP )
             Communiaction Data Code : Binary
         ```
-        ![Example Image](images/p1.png)
+        ![Example Image](../images/p1.png)
 
     - **步驟-2 : 安裝 rkmcprotocol**
         ```python
