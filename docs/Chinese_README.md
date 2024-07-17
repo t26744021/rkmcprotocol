@@ -28,7 +28,6 @@
         ```
         ```python
         pip uninstall rk_mcprotocal --break-system-packages
-
         ```
         Example : rk@raspberrypi:~/rkmcprotocol $ pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages<br>
 

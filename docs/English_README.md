@@ -16,12 +16,22 @@
         ```
         ![Example Image](../images/p1.png)
 
-    - **Step-2 : Install rkmcprotocol**
+    - **Step-2 : Install rkmcprotocol ( Windows )**
         ```python
         pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
         ```
         Example : C:\Users\Downloads\rkmcprotocol-main>pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
 
+    - **Step-2 : Install / Uninstall rkmcprotocol ( Raspberr PI OS 64-bit )**
+        ```python
+        pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages
+        ```
+        ```python
+        pip uninstall rk_mcprotocal --break-system-packages
+        ```
+        Example : rk@raspberrypi:~/rkmcprotocol $ pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages<br>
+
+        Example : rk@raspberrypi:~/rkmcprotocol $ pip uninstall rk_mcprotocal --break-system-packages<br>        
 
 - **Function Overview**：
  
