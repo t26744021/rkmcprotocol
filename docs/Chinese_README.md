@@ -22,7 +22,7 @@
         ```
         Example : C:\Users\Downloads\rkmcprotocol-main>pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
 
-    - **步驟-2 : 安裝 rkmcprotocol ( Raspberr pi )**
+    - **步驟-2 : 安裝 rkmcprotocol ( Raspberr PI OS 64-bit )**
         ```python
         pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages
         ```
