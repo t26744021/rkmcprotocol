@@ -25,7 +25,8 @@
     - **步驟-2 : 安裝 rkmcprotocol ( Raspberr pi )**
         ```python
         pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages
-
+        ```
+        ```python
         pip uninstall rk_mcprotocal --break-system-packages
 
         ```
