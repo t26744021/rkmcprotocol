@@ -6,7 +6,7 @@
     
     FX5U (CPU Ethernet)
 
-- **How to use**：
+- **How to use ?**：
 
     - **Step-1 : Configure PLC**
         ```python
@@ -23,23 +23,23 @@
         Example : C:\Users\Downloads\rkmcprotocol-main>pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
 
 
-- **功能簡介**：
+- **Function Overview**：
  
 
                                                                FX5U : 出廠默認記憶體範圍
                                                        ( 使用者可自行變更記憶體區塊,所以只介紹默認設定 )
-        FUNCTION         元件清單      資料長度         元件清單       資料長度        進制       總點數
+        Function       Device Code     Length         Device Code     Points    CarrySystem  Max.Points
         -------------------------------------------| --------------------------------------------------
-        read_sign_word     D0           960        |      X         X0 ~ X1777        8        1024    
-                           W0           512        |      Y         Y0 ~ Y1777        8        1024    
-                           R0           960        |      M         M0 ~ M7679        10       7680    
-                                                   |      B         B0 ~ B0FF         16       256     
-        read_sign_Dword    D0           480        |      L         L0 ~ L7679        10       7680    
-                           W0           256        |      F         F0 ~ F127         10       128     
+        read_sign_word     D0           960        |      X         X0 ~ X1777      OCT       1024    
+                           W0           512        |      Y         Y0 ~ Y1777      OCT       1024    
+                           R0           960        |      M         M0 ~ M7679      DEC       7680    
+                                                   |      B         B0 ~ B0FF       HEX       256     
+        read_sign_Dword    D0           480        |      L         L0 ~ L7679      DEC       7680    
+                           W0           256        |      F         F0 ~ F127       DEC       128     
                            R0           480        |
-                                                   |      D         D0 ~ D7999        10       8000    
-        read_bit           X0           1024       |      W         W0 ~ W1FF         16       512     
-                           Y0           1024       |      R         R0 ~ R32767       10       32768   
+                                                   |      D         D0 ~ D7999      DEC       8000    
+        read_bit           X0           1024       |      W         W0 ~ W1FF       HEX       512     
+                           Y0           1024       |      R         R0 ~ R32767     DEC       32768   
                            M0           3584       |----------------------------------------------------
                            B0           256        |
                            L0           3584       |
