@@ -120,16 +120,16 @@
     
 - **Q&A**：
 
-    - **通訊格式為何不使用ASCII,而使用Binary**
+    - **Why use Binary instead of ASCII for communication ?**
     
-        A : 速度會比較慢<br>
-        引用 : MELSEC iQ-F FX5使用手冊(SLMP篇) Page 12 :<br>
-            與利用ASCII代碼的資料進行的通訊相比，利用二進位代碼的資料進行的通訊的通訊資料量僅約為一半，因此能夠縮短通訊時間。<br>
+        A : ASCII is slower<br>
+        Reference : MELSEC iQ-F FX5 User's Manual (SLMP) Page 12 :<br>
+        When using binary codes , the communcation time will decrease since the amount of communication dreduced by approximately half comparing to using ASCII codes <br>
 
-    - **使用Threading會比較快嗎?**
+    - **Does using Threading make it faster ?**
 
-        A : 不會<br>
-        引用 : MELSEC iQ-F FX5使用手冊(SLMP篇) Page 13 :<br>
+        A : No<br>
+        Referenve : MELSEC iQ-F FX5 User's Manual (SLMP) Page 13 :<br>
             SLMP的數據通訊採用半雙工通訊。<br>
             存取CPU模組時，請在相對於前一個指令封包的發送，接收到來自CPU模組側的回應封包後，發送下一個指令封包。
             （在完成回應封包的接收前，不能發送下一個指令封包。）<br>
