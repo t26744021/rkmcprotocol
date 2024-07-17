@@ -26,8 +26,8 @@
 - **Function Overview**：
  
 
-                                                               FX5U : 出廠默認記憶體範圍
-                                                       ( 使用者可自行變更記憶體區塊,所以只介紹默認設定 )
+                                                               FX5U : Default Memory Range
+                                                  ( User can change memory blocks , so only default settings are introduced )
         Function       Device Code     Length         Device Code     Points    CarrySystem  Max.Points
         -------------------------------------------| --------------------------------------------------
         read_sign_word     D0           960        |      X         X0 ~ X1777      OCT       1024    
@@ -60,39 +60,39 @@
                            L0           3584       |
                            F0           128        |                
         -------------------------------------------|
-- **指令**：
+- **Commands**：
     ```python  
 
-        # 讀M0 ~ M3583 , 數值 : 0 or 1
+        # Read M0 ~ M3583 , Value : 0 or 1
         print(mc.read_bit(s,headdevice = 'm0' , length = 3584 ))
 
-        # 讀D0 ~ D959              
-        # signed_type=True  數值 : -32,768 ~ 32,767 
-        # signed_type=False 數值 :       0 ~ 65,535 
+        # Read D0 ~ D959              
+        # signed_type=True  Value : -32,768 ~ 32,767 
+        # signed_type=False Value :       0 ~ 65,535 
         print(mc.read_sign_word(s,headdevice = 'd0' , length = 960, signed_type=True))
 
-        # 讀(R0,R1) ~ (R958,R959)  
-        # signed_type=True  數值 : -2,147,483,648 ~ 2,147,483,647 
-        # signed_type=False 數值 :              0 ~ 4,294,967,295       
+        # Read (R0,R1) ~ (R958,R959)  
+        # signed_type=True  Value : -2,147,483,648 ~ 2,147,483,647 
+        # signed_type=False Value :              0 ~ 4,294,967,295       
         print(mc.read_sign_Dword(s,headdevice = 'r0' , length =480 , signed_type=True))
      
 
-        # 寫M0 ~ M3583 , 數值 : 0 or 1
+        # Write M0 ~ M3583 , Value : 0 or 1
         print(mc.write_bit(s,headdevice = 'm0' , data_list = [1]*3584 )) 
 
-        # 寫D0 ~ D959              
-        # signed_type=True  數值 : -32,768 ~ 32,767
-        # signed_type=False 數值 :       0 ~ 65,535 
+        # Write D0 ~ D959              
+        # signed_type=True  Value : -32,768 ~ 32,767
+        # signed_type=False Value :       0 ~ 65,535 
         print(mc.write_sign_word(s,headdevice = 'd0' , data_list = [-999]*960 ,signed_type =True))
 
-        # 寫(R0,R1) ~ (R958,R959)  
-        # signed_type=True  數值 : -2,147,483,648 ~ 2,147,483,647 
-        # signed_type=False 數值 :              0 ~ 4,294,967,295       
+        # Write (R0,R1) ~ (R958,R959)  
+        # signed_type=True  Value : -2,147,483,648 ~ 2,147,483,647 
+        # signed_type=False Value :              0 ~ 4,294,967,295       
         print(mc.write_sign_Dword(s,headdevice = 'r0' , data_list = [9999999]*480 ,signed_type =True))
 
 
     ```
-- **範例**：
+- **Example**：
     ```python  
         import rk_mcprotocol as mc
         import time
