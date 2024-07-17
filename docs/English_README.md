@@ -130,7 +130,8 @@
 
         A : No<br>
         Referenve : MELSEC iQ-F FX5 User's Manual (SLMP) Page 13 :<br>
-            SLMP的數據通訊採用半雙工通訊。<br>
-            存取CPU模組時，請在相對於前一個指令封包的發送，接收到來自CPU模組側的回應封包後，發送下一個指令封包。
-            （在完成回應封包的接收前，不能發送下一個指令封包。）<br>
+            Data communication using SLMP communication is executed in half-duplex communication。<br>
+            To access the Ethernet-equipped module, send the next command message after receiving a response message for the
+            preceding command message from the Ethernet-equipped module。<br>
+            (Until the receiving of the response message is completed, the next command message cannot be sent.)<br>
  
