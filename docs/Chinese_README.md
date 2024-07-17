@@ -24,12 +24,14 @@
 
     - **步驟-2 : 安裝 rkmcprotocol ( Raspberr pi )**
         ```python
-        pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
+        pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages
 
-        pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
+        pip uninstall rk_mcprotocal --break-system-packages
 
         ```
-        Example : C:\Users\Downloads\rkmcprotocol-main>pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
+        Example : rk@raspberrypi:~/rkmcprotocol $ pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages<br>
+
+        Example : rk@raspberrypi:~/rkmcprotocol $ pip uninstall rk_mcprotocal --break-system-packages<br>
 
 - **功能簡介**：
  
