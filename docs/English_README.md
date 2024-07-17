@@ -124,7 +124,7 @@
     
         A : ASCII is slower<br>
         Reference : MELSEC iQ-F FX5 User's Manual (SLMP) Page 12 :<br>
-        When using binary codes , the communcation time will decrease since the amount of communication dreduced by approximately half comparing to using ASCII codes <br>
+        When using binary codes , the communcation time will decrease since the amount of communication dreduced by approximately half comparing to using ASCII codes 。<br>
 
     - **Does using Threading make it faster ?**
 
