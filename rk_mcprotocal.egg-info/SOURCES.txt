@@ -1,8 +1,0 @@
-README.md
-setup.py
-rk_mcprotocal.egg-info/PKG-INFO
-rk_mcprotocal.egg-info/SOURCES.txt
-rk_mcprotocal.egg-info/dependency_links.txt
-rk_mcprotocal.egg-info/top_level.txt
-rk_mcprotocol/__init__.py
-rk_mcprotocol/main.py

@@ -139,7 +139,7 @@
     - **Does using Threading make it faster ?**
 
         A : No<br>
-        Referenve : MELSEC iQ-F FX5 User's Manual (SLMP) Page 13 :<br>
+        Reference : MELSEC iQ-F FX5 User's Manual (SLMP) Page 13 :<br>
             Data communication using SLMP communication is executed in half-duplex communication。<br>
             To access the Ethernet-equipped module, send the next command message after receiving a response message for the
             preceding command message from the Ethernet-equipped module。<br>

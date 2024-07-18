@@ -27,27 +27,27 @@ main_data_byte = {
 }
 
 plc_error_message = {
-    "C050" : "通訊數據代碼設置為“ASCII”時,接收了無法轉換為二進制碼的ASCII碼數據。PLC_error = C050(hex)",
-    "C051" : "可一次性批量讀寫的最大位軟元件數超出允許範圍。PLC_error = C051(hex)", # OK
-    "C052" : "可一次性批量讀寫的最大字軟元件數超出允許範圍。PLC_error = C052(hex)", # OK  當長度小於999
-    "C053" : "可一次性隨機讀寫的最大位軟元件數超出允許範圍。PLC_error = C053(hex)",  #(預留)沒使用到隨機指令
-    "C054" : "可一次性隨機讀寫的最大字軟元件數超出允許範圍。PLC_error = C054(hex)",  #(預留)沒使用到隨機指令
-    "C056" : "超過最大地址的寫入及讀取請求。PLC_error = C056(hex)", #ok
-    "C058" : "ASCII-二進制轉換後的請求數據長度與字符區(文本的一部分)的數據數不符。PLC_error = C058(hex)",
-    "C059" : "1.命令、子命令的指定有誤。2.是CPU模塊中無法使用的命令、子命令。PLC_error = C059(hex)",
-    "C05B" : "CPU模塊無法對指定軟元件進行寫入及讀取。PLC_error = C05B(hex)",
-    "C05C" : "請求內容有誤。(以位為單位對字軟元件進行寫入、讀取等)。PLC_error = C05C(hex)",
-    "C05F" : "是無法對對象CPU模塊執行的請求。PLC_error = C05F(hex)",
-    "C060" : "請求內容有誤。(對位軟元件的數據指定有誤等)。PLC_error = C060(hex)",
-    "C061" : "請求數據長度與字符區(文本的一部分)的數據數不符。PLC_error = C061(hex)",
-    "C06F" : "通訊數據代碼被設置為“二進制”時,接收了ASCII的請求報文。(本出錯代碼僅登錄出錯履歷，而不返回異常響應)。PLC_error = C06F(hex)",
-    "C0D8" : "指定塊數超過範圍。PLC_error = C0D8(hex)",
-    "C200" : "遠程口令有誤。PLC_error = C200(hex)",
-    "C201" : "通訊所使用的端口處於遠程密碼鎖定狀態。PLC_error = C201(hex)",
-    "C204" : "與請求了遠程口令解鎖處理的對方設備不同。PLC_error = C204(hex)",
-    "C810" : "遠程密碼有誤。(認證失敗次數為9次以下)。PLC_error = C810(hex)",
-    "C815" : "遠程密碼有誤。(認證失敗次數為10次)。PLC_error = C815(hex)",
-    "C816" : "遠程密碼認證閉鎖中。PLC_error = C816(hex)"
+    "C050" : "When the communication data code is set to “ASCII”, ASCII code data which cannot be converted to binary is received. PLC_error = C050(hex)",
+    "C051" : "Maximum number of bit devices for which data can be read/written all at once is outside the allowable range. PLC_error = C051(hex)", # OK
+    "C052" : "Maximum number of word devices for which data can be read/written all at once is outside the allowable range. PLC_error = C052(hex)", # OK  當長度小於999
+    "C053" : "Maximum number of bit devices for which data can be random read/written all at once is outside the allowable range. PLC_error = C053(hex)",  #(預留)沒使用到隨機指令
+    "C054" : "Maximum number of word devices for which data can be random read/written all at once is outside the allowable range. PLC_error = C054(hex)",  #(預留)沒使用到隨機指令
+    "C056" : "Read or write request exceeds maximum address. PLC_error = C056(hex)", #ok
+    "C058" : "Request data length after ASCII-to-binary conversion does not match the number of data in the character section (part of text). PLC_error = C058(hex)",
+    "C059" : "1.Error in command or subcommand specification. 2.There is a command or subcommand that cannot be used by the CPU module. PLC_error = C059(hex)",
+    "C05B" : "CPU module cannot read or write from/to specified device. PLC_error = C05B(hex)",
+    "C05C" : "Error in request contents. (Reading or writing by bit unit for word device, etc.) PLC_error = C05C(hex)",
+    "C05F" : "There is a request that cannot be executed for the target CPU module. PLC_error = C05F(hex)",
+    "C060" : "Error in request contents. (Error in specification of data for bit device, etc.) PLC_error = C060(hex)",
+    "C061" : "Request data length does not match the number of data in the character section (part of text). PLC_error = C061(hex)",
+    "C06F" : "When the communication data code is set to Binary, a request message of ASCII is received. (Error history of this error code is registered but no error response is sent.) PLC_error = C06F(hex)",
+    "C0D8" : "The number of specified blocks exceeds the range. PLC_error = C0D8(hex)",
+    "C200" : "Error in remote password. PLC_error = C200(hex)",
+    "C201" : "Locked status of the remote password of the port which is used for communication. PLC_error = C201(hex)",
+    "C204" : "Different device requested remote password to be unlocked. PLC_error = C204(hex)",
+    "C810" : "Error in remote password. (Authentication failure count is 9 or less.) PLC_error = C810(hex)",
+    "C815" : "Error in remote password. (Authentication failure count is 10.) PLC_error = C815(hex)",
+    "C816" : "Remote password authentication is locked out. PLC_error = C816(hex)"
 }
 
 def open_socket(HOST, PORT):
