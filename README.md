@@ -8,6 +8,9 @@
     
     FX5U (CPU Ethernet)
 
+- **Youtube**：
+    https://www.youtube.com/watch?v=UQ1ehUCmH3I&t=326s<br>
+
 ## Language / 語言
 
 - [English README](docs/English_README.md)
