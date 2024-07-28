@@ -11,6 +11,9 @@
 - **Youtube**：
     https://www.youtube.com/watch?v=UQ1ehUCmH3I&t=326s<br>
 
+- **PyPI**：
+    https://pypi.org/project/rk-mcprotocol/0.0.2/<br>
+
 ## Language / 語言
 
 - [English README](docs/English_README.md)
