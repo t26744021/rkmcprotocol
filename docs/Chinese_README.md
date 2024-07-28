@@ -18,20 +18,20 @@
 
     - **步驟-2 : 安裝 rkmcprotocol ( Windows )**
         ```python
-        pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
+        pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl
         ```
-        Example : C:\Users\Downloads\rkmcprotocol-main>pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl
+        Example : C:\Users\Downloads\rkmcprotocol-main>pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl
 
     - **步驟-2 : 安裝 / 移除 rkmcprotocol ( Raspberr PI OS 64-bit )**
         ```python
-        pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages
+        pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl --break-system-packages
         ```
         ```python
-        pip uninstall rk_mcprotocal --break-system-packages
+        pip uninstall rk_mcprotocol --break-system-packages
         ```
-        Example : rk@raspberrypi:~/rkmcprotocol $ pip install dist/rk_mcprotocal-0.0.2-py3-none-any.whl --break-system-packages<br>
+        Example : rk@raspberrypi:~/rkmcprotocol $ pip install dist/rk_mcprotocol-0.0.2-py3-none-any.whl --break-system-packages<br>
 
-        Example : rk@raspberrypi:~/rkmcprotocol $ pip uninstall rk_mcprotocal --break-system-packages<br>
+        Example : rk@raspberrypi:~/rkmcprotocol $ pip uninstall rk_mcprotocol --break-system-packages<br>
 
 - **功能簡介**：
  
